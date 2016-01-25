@@ -2,3 +2,5 @@ calibrate instruments first, kick, snare etc
 then use filtering to then plot each event on a grid to then match tempo
 Requires - A tempo grid, will only work up to 16ths to start with
 Sources - http://epubl.ltu.se/1402-1617/2009/073/LTU-EX-09073-SE.pdf
+
+Some way to minic coach mode on Roland vdrums
