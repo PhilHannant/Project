@@ -7,9 +7,30 @@ Some way to mimic coach mode on Roland vdrums
 
 Use of sound gate?
 filter -> FFT -> plot time-domain
+pitch recognition
+peak detection
+
+Maybe use preformed drum beats which the input is measured against
+
 
 
 Things to look up
 FFT on drums
 Filtered FFT
 Limitations of FFT
+Tempo coaching systems
+audio to midi -> time domain placement
+Qt framework
+
+Sources
+-   http://cs.ucsb.edu/~davidj/Files/musiccoach_report.pdf
+-   Frigo, M., and Johnson, S.G., FFTW: An adaptive software architecture for the FFT, IEEE International Conference on
+    Acoustics Speech and Signal Processing, volume 3, 1998
+-   Kuhn, W.B., Gupta, P. and Kumar, P.R., A real-time pitch recognition algorithm for music applications, Computer
+    Music Journal, pp. 60-71, 1990
+
+Libraries
+FFTW from MIT
+
+Things to be aware of
+Noise in the sample
