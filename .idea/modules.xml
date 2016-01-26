@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$//3rdPLibraries.iml" filepath="$PROJECT_DIR$//3rdPLibraries.iml" />
       <module fileurl="file://$PROJECT_DIR$/Project.iml" filepath="$PROJECT_DIR$/Project.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestArea/TestArea.iml" filepath="$PROJECT_DIR$/TestArea/TestArea.iml" />
-      <module fileurl="file://$USER_HOME$/Downloads/trackanalyzer-master/trackanalyzer-master.iml" filepath="$USER_HOME$/Downloads/trackanalyzer-master/trackanalyzer-master.iml" />
     </modules>
   </component>
 </project>
