@@ -34,3 +34,33 @@ FFTW from MIT
 
 Things to be aware of
 Noise in the sample
+
+Look up freqMap array, crossoverbin ,crossovermidi, fftsize
+
+fftsize = 2048
+samplerate = 48000.0
+binwidth = 23.4375
+crossoverbin = 33
+crossovermidi = 79
+i = 1024
+midi = 138.232644862303
+
+Hamming
+makewindow
+processframe etc
+findonsets - onsetslenght
+hoptime
+considerasbeat
+beattrack
+e.keydown
+
+Classes used
+BeatRoot
+AudioProcessor
+BeatTrackDisplay
+AgentList
+Agent
+Induction
+Event
+EventList
+Peaks

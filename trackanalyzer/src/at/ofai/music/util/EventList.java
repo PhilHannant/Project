@@ -543,10 +543,14 @@ public class EventList implements Serializable {
 		DescriptiveStatistics stats = new DescriptiveStatistics();
 		if (onsetList.size()>1) 
 			for (int i=1;i<onsetList.size();i++) {
-				stats.addValue(onsetList.get(i)-onsetList.get(i-1));
+				double x = onsetList.get(i)-onsetList.get(i-1);
+				System.out.println(x);
+				stats.addValue(x);
 			}
-		
+		System.out.println("max = " + stats.getMax());
+		System.out.println("min = " + stats.getMin());
 		double median = stats.getPercentile(50);
+		System.out.println("median = " + median);
 		double bpm = 60/median;
         if (bpm > maxbpm) {
             bpm = bpm/2;

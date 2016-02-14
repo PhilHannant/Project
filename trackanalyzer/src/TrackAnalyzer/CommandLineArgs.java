@@ -25,7 +25,7 @@ public class CommandLineArgs {
 	@Parameter(names = "-l", description = "text file containing list of audio files")
 	public String filelist = "";
 
-	@Parameter(names = {"--help","-h","-?"}, help = true)
+	@Parameter(names = {"--help","-h","-?"})
 	public boolean help;
 
 	public static final String DEBUG = "-debug";
