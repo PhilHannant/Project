@@ -1,7 +1,12 @@
 calibrate instruments first, kick, snare etc
 then use filtering to then plot each event on a grid to then match tempo
 Requires - A tempo grid, will only work up to 16ths to start with
-Sources - http://epubl.ltu.se/1402-1617/2009/073/LTU-EX-09073-SE.pdf
+Sources - http://epubl.ltu.se/1402-1617/2009/073/LTU-EX-09073-SE.pdf;
+https://en.wikipedia.org/wiki/Comb_filter;
+http://stackoverflow.com/questions/657073/how-to-detect-the-bpm-of-a-song-in-php;
+http://www.music-ir.org/;
+http://marsyasweb.appspot.com/;
+http://www.vamp-plugins.org/download.html
 
 Some way to mimic coach mode on Roland vdrums
 
@@ -64,3 +69,7 @@ Induction
 Event
 EventList
 Peaks
+
+Beatroot doesn't work for slow bpms <= 60
+Doesn't start on the first beat
+Adjustment for initial onset needed

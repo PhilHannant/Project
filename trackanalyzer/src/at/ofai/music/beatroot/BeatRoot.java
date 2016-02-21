@@ -274,9 +274,10 @@ public class BeatRoot {
 	 * @see #processArgs(String[])
 	 */
 	public BeatRoot(String[] args) {
-		String filename = "/Users/philhannant/Desktop/Wavs/bottle_120bpm.wav";
+		String filename = "/Users/philhannant/Desktop/Wavs/60BpmTest.wav";
+		System.out.println(filename);
 		System.out.println(getBPM(filename));
-		/*batchMode = false;
+		batchMode = false;
 		playWithBeats = false;
 		argsFile = null;
 		reader = null;
@@ -380,7 +381,7 @@ public class BeatRoot {
 //			while (audioPlayer.playing)
 //				Thread.sleep(200);
 //		} catch (InterruptedException e) {
-//		}*/
+//		}
 	}  // constructor
 
 	public static double getBPM(String filename) {

@@ -50,7 +50,8 @@ public class GUI extends JFrame {
 	
 	/** The object which handles sound output */
 	protected AudioPlayer audioPlayer;
-	
+
+
 	/** The object which reads and processes audio */
 	protected AudioProcessor audioProcessor;
 	
@@ -144,13 +145,13 @@ public class GUI extends JFrame {
     /** Constants and default file names for percussion sounds for each metrical levels */
     public static final int percussionCount = 7;
 	public static final String PERCUSSION_STRINGS[][] = {
-		{"Level 1: Track", "audio/77-woodblk2.wav"},
-		{"Level 2: Beat", "audio/76-woodblk1.wav"},
-		{"Level 3: Bar", "audio/33-metclick.wav"},
-		{"Level 4: Phrase 1", "audio/34-metbell.wav"},
-		{"Level 5: Phrase 2", "audio/56-cowbell.wav"},
-		{"Level 6: Phrase 3", "audio/53-cymbell.wav"},
-		{"Level 7: Phrase 4", "audio/81-triangl2.wav"}
+		{"Level 1: Track", "/Users/philhannant/IdeaProjects/Project/trackanalyzer/audio/77-woodblk2.wav"},
+		{"Level 2: Beat", "/Users/philhannant/IdeaProjects/Project/trackanalyzer/audio/76-woodblk1.wav"},
+		{"Level 3: Bar", "/Users/philhannant/IdeaProjects/Project/trackanalyzer/audio/33-metclick.wav"},
+		{"Level 4: Phrase 1", "/Users/philhannant/IdeaProjects/Project/trackanalyzer/audio/34-metbell.wav"},
+		{"Level 5: Phrase 2", "/Users/philhannant/IdeaProjects/Project/trackanalyzer/audio/56-cowbell.wav"},
+		{"Level 6: Phrase 3", "/Users/philhannant/IdeaProjects/Project/trackanalyzer/audio/53-cymbell.wav"},
+		{"Level 7: Phrase 4", "/Users/philhannant/IdeaProjects/Project/trackanalyzer/audio/81-triangl2.wav"}
 	};
 
 	/** Constructor: creates the GUI for BeatRoot
@@ -406,6 +407,7 @@ public class GUI extends JFrame {
 		updateDisplay(false);
 		EditAction.clear();			// TODO: undo?
 	} // setBeatData()
+
 
 	/** Clear all beats.  Note that this action can't be undone. */
 	public void clearBeatData() {

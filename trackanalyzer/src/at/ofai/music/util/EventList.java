@@ -544,7 +544,7 @@ public class EventList implements Serializable {
 		if (onsetList.size()>1) 
 			for (int i=1;i<onsetList.size();i++) {
 				double x = onsetList.get(i)-onsetList.get(i-1);
-				System.out.println(x);
+				System.out.println("onset is: " + x);
 				stats.addValue(x);
 			}
 		System.out.println("max = " + stats.getMax());

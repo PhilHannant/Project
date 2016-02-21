@@ -20,6 +20,7 @@
 package at.ofai.music.beatroot;
 
 import javax.swing.JCheckBoxMenuItem;
+import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.ActionEvent;
@@ -101,8 +102,9 @@ class EventProcessor implements ActionListener, KeyListener {
 			gui.setMode(BeatTrackDisplay.SHOW_AUDIO, flag);
 		else if (command.equals(GUI.SHOW_SPECTRO))
 			gui.setMode(BeatTrackDisplay.SHOW_SPECTRO, flag);
-		else if (command.equals(GUI.BEAT_TRACK))
-			gui.displayPanel.beatTrack();
+		else if (command.equals(GUI.BEAT_TRACK)){
+			System.out.println("beattracking");
+			gui.displayPanel.beatTrack();}
 		else if (command.equals(GUI.CLEAR_BEATS))
 			gui.clearBeatData();
 		else if (command.equals(GUI.MARK_METRICAL_LEVEL))

@@ -59,6 +59,7 @@ import org.jaudiotagger.tag.mp4.field.Mp4TagTextField;
 import org.jaudiotagger.tag.vorbiscomment.VorbisCommentTag;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
+import java.util.Arrays;
 
 public class TrackAnalyzer {
 
@@ -69,13 +70,14 @@ public class TrackAnalyzer {
 	public final Parameters p;
 
 	TrackAnalyzer(String[] args) throws Exception {
-
+		String filename = "/Users/philhannant/Desktop/Wavs/bottle_120bpm.wav";
+		filenames.add(filename);
 		JCommander jcommander = new JCommander(c, args);
 		jcommander.setProgramName("TrackAnalyzer");
-		if ((c.filenames.size() == 0 && Utils.isEmpty(c.filelist)) || c.help) {
+		/*if ((c.filenames.size() == 0 && Utils.isEmpty(c.filelist)) || c.help) {
 			jcommander.usage();
 			System.exit(-1);
-		}
+		}*/
 		if (c.debug) {
 			Logger.getLogger(TrackAnalyzer.class.getName()).setLevel(Level.ALL);
 		} else {
@@ -120,6 +122,7 @@ public class TrackAnalyzer {
 		k = new KeyFinder();
 		p = new Parameters();
 		p.setHopSize(8192);
+		System.out.println(filenames.get(0));
 	}
 
 	/**
@@ -249,9 +252,11 @@ public class TrackAnalyzer {
 			// Delete temp file when program exits.
 			temp.deleteOnExit();
 			temp2.deleteOnExit();
+			System.out.println(filename);
 			decodeAudioFile(new File(filename), temp, 44100);
 			decodeAudioFile(temp, temp2);
 		} catch (Exception ex) {
+			ex.printStackTrace();
 			Logger.getLogger(TrackAnalyzer.class.getName()).log(Level.WARNING, "error while decoding" + filename + ".");
 			if (temp.length() == 0) {
 				logDetectionResult(filename, "-", "-", false);

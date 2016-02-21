@@ -1160,6 +1160,7 @@ public class BeatTrackDisplay
 	 *  If a region is selected, the beats outside the region are kept
 	 *  intact and the tempo preserved across the region boundaries. */
 	public void beatTrack() {
+		System.out.println("tempo: ");
 		AgentList agents = null;
 		double beatTime = -1.0;
 		int count = 0;
@@ -1180,9 +1181,12 @@ public class BeatTrackDisplay
 			agents = new AgentList(new Agent(ioi), null);
 		} else									// tempo not given; use tempo induction
 			agents = Induction.beatInduction(onsetList);
+			System.out.println("onsetlist: " + onsetList.toArray().toString());
 		for (AgentList ptr = agents; ptr.ag != null; ptr = ptr.next) {
 			ptr.ag.beatTime = beatTime;
+			System.out.println("bestTime: " + beatTime);
 			ptr.ag.beatCount = count;
+			System.out.println("count: " + count);
 			ptr.ag.events = new EventList(beats);
 		}
 		//onsetList.print();
@@ -1534,6 +1538,7 @@ public class BeatTrackDisplay
 	 */
 	synchronized public void setEnvTimes(double[] envTimes) {
 		env = envTimes;
+		System.out.println(envTimes);
 		setMode(SHOW_AUDIO, SHOW_MIDI);
 	} // setEnvTimes()
 

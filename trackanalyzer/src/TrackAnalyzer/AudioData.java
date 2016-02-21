@@ -98,6 +98,8 @@ public class AudioData {
             return;
         }
         //ArrayList<Double> newStream = new ArrayList<Double>(sampleCount / channels);
+        System.out.println("sample: " + sampleCount);
+        System.out.println("channels: " + channels);
         double[] newStream = new double[sampleCount / channels];
         for (int i = 0; i < sampleCount; i += channels) {
             double mono = 0.0;
