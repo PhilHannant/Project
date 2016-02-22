@@ -7,6 +7,8 @@ http://stackoverflow.com/questions/657073/how-to-detect-the-bpm-of-a-song-in-php
 http://www.music-ir.org/;
 http://marsyasweb.appspot.com/;
 http://www.vamp-plugins.org/download.html
+http://www.dafx.ca/proceedings/papers/p_133.pdf
+http://www.music-ir.org/evaluation/mirex-results/articles/drum/tanghe.pdf
 
 Some way to mimic coach mode on Roland vdrums
 
@@ -73,3 +75,9 @@ Peaks
 Beatroot doesn't work for slow bpms <= 60
 Doesn't start on the first beat
 Adjustment for initial onset needed
+
+ a simple time-domain onset detection algorithm was used, which finds
+local peaks in the slope of a smoothed amplitude envelope using the “surfboard” method
+of Schloss (1985).
+
+Change the onset detection
