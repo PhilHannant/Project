@@ -81,3 +81,5 @@ local peaks in the slope of a smoothed amplitude envelope using the “surfboard
 of Schloss (1985).
 
 Change the onset detection
+
+Use microphone event to plot midi??
