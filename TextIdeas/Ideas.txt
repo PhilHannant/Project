@@ -9,6 +9,10 @@ http://marsyasweb.appspot.com/;
 http://www.vamp-plugins.org/download.html
 http://www.dafx.ca/proceedings/papers/p_133.pdf
 http://www.music-ir.org/evaluation/mirex-results/articles/drum/tanghe.pdf
+http://mziccard.me/2015/05/28/beats-detection-algorithms-1/
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.63.5712&rep=rep1&type=pdf
+http://tech.beatport.com/2014/web-audio/beat-detection-using-web-audio/
+http://mziccard.me/2015/06/12/beats-detection-algorithms-2/
 
 Some way to mimic coach mode on Roland vdrums
 
@@ -83,3 +87,4 @@ of Schloss (1985).
 Change the onset detection
 
 Use microphone event to plot midi??
+
