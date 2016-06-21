@@ -90,3 +90,11 @@ Change the onset detection
 
 Use microphone event to plot midi??
 
+
+Read 
+
+http://www.developer.com/java/other/article.php/1565671
+http://www.developer.com/java/other/article.php/1572251
+http://www.developer.com/java/other/article.php/1579071/Java-Sound-Getting-Started-Part-2-Capture-Using-Specified-Mixer.htm
+
+http://stackoverflow.com/questions/25798200/java-record-mic-to-byte-array-and-play-sound
