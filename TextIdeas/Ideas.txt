@@ -14,6 +14,7 @@ http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.63.5712&rep=rep1&type=p
 http://tech.beatport.com/2014/web-audio/beat-detection-using-web-audio/
 http://mziccard.me/2015/06/12/beats-detection-algorithms-2/
 http://www.eit.lth.se/fileadmin/eit/courses/etin80/2014/reports/beat_detect.pdf
+http://www.cs.cmu.edu/~rbd/papers/bticmc.pdf
 
 Some way to mimic coach mode on Roland vdrums
 
